@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</h1>
 
 	<p class="wpnm-description">
-		<?php esc_html_e( 'Manage and organize WordPress admin notices by moving them from the cluttered dashboard into a centralized notice management system.', 'Notice-Tracker' ); ?>
+		<?php esc_html_e( 'Manage and organize WordPress admin notices by moving them from the cluttered dashboard into a centralized notice management system.', 'notice-tracker' ); ?>
 	</p>
 
 	<?php settings_errors(); ?>
@@ -32,27 +32,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</form>
 
 	<div class="wpnm-info-box">
-		<h3><?php esc_html_e( 'How It Works', 'Notice-Tracker' ); ?></h3>
+		<h3><?php esc_html_e( 'How It Works', 'notice-tracker' ); ?></h3>
 		<ol>
-			<li><?php esc_html_e( 'Configure how each notice type should be handled above', 'Notice-Tracker' ); ?></li>
-			<li><?php esc_html_e( 'Notices will be captured and stored based on your settings', 'Notice-Tracker' ); ?></li>
-			<li><?php esc_html_e( 'Click "Notices" in the admin toolbar to view all captured notices', 'Notice-Tracker' ); ?></li>
-			<li><?php esc_html_e( 'Mark notices as read or dismiss them from the popup', 'Notice-Tracker' ); ?></li>
+			<li><?php esc_html_e( 'Configure how each notice type should be handled above', 'notice-tracker' ); ?></li>
+			<li><?php esc_html_e( 'Notices will be captured and stored based on your settings', 'notice-tracker' ); ?></li>
+			<li><?php esc_html_e( 'Click "Notices" in the admin toolbar to view all captured notices', 'notice-tracker' ); ?></li>
+			<li><?php esc_html_e( 'Mark notices as read or dismiss them from the popup', 'notice-tracker' ); ?></li>
 		</ol>
 	</div>
 
 	<div class="wpnm-stats-box">
-		<h3><?php esc_html_e( 'Statistics', 'Notice-Tracker' ); ?></h3>
+		<h3><?php esc_html_e( 'Statistics', 'notice-tracker' ); ?></h3>
 		<?php
 		$wpnm_total_notices  = count( \Notice_Tracker\Notices\Notice_Storage::get_all() );
 		$wpnm_unread_notices = \Notice_Tracker\Notices\Notice_Storage::get_unread_count();
 		?>
 		<p>
-			<strong><?php esc_html_e( 'Total Notices:', 'Notice-Tracker' ); ?></strong>
+			<strong><?php esc_html_e( 'Total Notices:', 'notice-tracker' ); ?></strong>
 			<?php echo esc_html( $wpnm_total_notices ); ?>
 		</p>
 		<p>
-			<strong><?php esc_html_e( 'Unread Notices:', 'Notice-Tracker' ); ?></strong>
+			<strong><?php esc_html_e( 'Unread Notices:', 'notice-tracker' ); ?></strong>
 			<?php echo esc_html( $wpnm_unread_notices ); ?>
 		</p>
 	</div>
